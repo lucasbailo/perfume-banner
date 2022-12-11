@@ -1,0 +1,150 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --montserrat: 'Montserrat', sans-serif;
+    --fraunces: 'Fraunces', serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: var(--cream);
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-mobile {
+   width: 90vw;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   border-bottom: 0;
+   vertical-align: bottom
+}
+
+
+.perfume__name {
+    font-family: var(--fraunces);
+    font-weight: 700;
+    font-size: 34px;
+    margin-top: 0.5em;
+    color: var(--very-dark-blue);
+}
+
+.container__description {
+    width: 90vw;
+    background: var(--white);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container__text {
+    padding: 1.6em;
+}
+
+.perfume__sub-text {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-family: var(--montserrat);
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+    line-height: 1.5em;
+}
+
+.perfume__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: var(--montserrat);
+    margin-left: 0;
+    letter-spacing: 6px;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price__new {
+    font-family: var(--fraunces);
+    font-size: 34px;
+    color: var(--dark-cyan);
+}
+
+.price__old {
+    font-size: 14px;
+    font-family: var(--montserrat);
+    color: var(--dark-cyan);
+    margin-left: 2em;
+    text-decoration: line-through;
+}
+
+.button__link {
+    text-decoration: none;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    font-family: var(--montserrat);
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 600;
+}
+
+.container__button {
+    margin-top: 0.8em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cart__icon {
+    margin-right: 1em;
+}
+
+.image-others {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .image-mobile {
+        display: none;
+    }
+
+    .image-others {
+        display: block;
+        width: 30vw;
+        height: 40vw;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+    }
+
+    .container__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30vw;
+        height: 40vw;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .container__principal {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+}
