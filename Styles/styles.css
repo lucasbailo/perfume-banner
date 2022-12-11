@@ -6,6 +6,7 @@
     --white: hsl(0, 0%, 100%);
     --montserrat: 'Montserrat', sans-serif;
     --fraunces: 'Fraunces', serif;
+    --hover-button: #184131;
 }
 
 
@@ -79,7 +80,7 @@ body {
 .price__old {
     font-size: 14px;
     font-family: var(--montserrat);
-    color: var(--dark-cyan);
+    color: var(--dark-grayish-blue);
     margin-left: 2em;
     text-decoration: line-through;
 }
@@ -100,6 +101,10 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.button__link:hover {
+    background-color: var(--hover-button);
 }
 
 .cart__icon {
@@ -139,6 +144,7 @@ body {
         height: 40vw;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 20px;
+        border-bottom-left-radius:0;
     }
 
     .container__principal {
