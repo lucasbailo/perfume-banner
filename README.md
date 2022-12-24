@@ -6,6 +6,8 @@ This is a solution to the [Product preview card component](https://www.frontendm
 
 ![](./design/desktop-design.jpg)
 
+## Test the project on your device: [Teste the project here!!!](https://perfume-banner.vercel.app/)
+
 ### Built with
 
 - Semantic HTML5;
